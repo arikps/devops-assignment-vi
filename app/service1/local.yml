@@ -1,0 +1,14 @@
+version: "2"
+services:
+  webserver:
+    restart: unless-stopped
+    privileged: true
+    image: <IMAGE NAME>
+    depends_on:
+      - mongo_db
+    ports:
+        - "<PORT>:<PORT>"
+  mongo_db:
+    image: mongo
+    ports:
+        - "27017:27017"

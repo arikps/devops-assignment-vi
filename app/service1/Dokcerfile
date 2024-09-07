@@ -1,0 +1,14 @@
+FROM node:lts
+ARG MONGODB_URL
+ARG PORT
+ENV PORT=${PORT}
+ENV MONGODB_URL=${MONGODB_URL}
+
+WORKDIR /app/service1
+COPY . .
+RUN npm install
+
+EXPOSE 3000
+
+CMD [ "npm", "start" ]
+
