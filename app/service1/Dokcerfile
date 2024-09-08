@@ -10,7 +10,6 @@ WORKDIR /app/service1
 RUN npm install
 COPY . /app/service1
 WORKDIR /app/service1
-RUN npm run build
 
 EXPOSE 3000
 
