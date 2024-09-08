@@ -8,7 +8,7 @@ RUN mkdir -p /app/service1/
 WORKDIR /app/service1/
 COPY app/service1/package.json ./app/service1/
 RUN npm install
-COPY . ./app/service1/
+COPY . .
 
 EXPOSE 3000
 
