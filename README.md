@@ -10,4 +10,4 @@ You are a DevOps engineer in a project of building an online orders system. Your
 Below is the information given by the development team.
 
 ### Installation Guide
-1. 
+1. To
