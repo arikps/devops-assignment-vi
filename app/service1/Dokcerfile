@@ -5,7 +5,7 @@ ENV PORT=${PORT}
 ENV MONGODB_URL=${MONGODB_URL}
 
 WORKDIR /
-COPY /app/service1/package.json /
+COPY package.json /
 RUN npm install -g
 COPY . .
 
