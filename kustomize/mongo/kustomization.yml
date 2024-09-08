@@ -1,0 +1,8 @@
+resources:
+- mongo-dep.yml
+- mongo-srv.yml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+    
+    
+    

@@ -1,0 +1,8 @@
+---
+    kind: ConfigMap
+    apiVersion: v1
+    metadata:
+      name: mongohost
+      namespace: service1
+    data:
+      MONGODB_URL: "mongodb://mongodb:27017"

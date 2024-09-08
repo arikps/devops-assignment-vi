@@ -1,0 +1,7 @@
+resources:
+- srv1-dep.yml
+- srv1-srv.yml
+- ingress.yml
+- configmap.yml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
