@@ -33,5 +33,5 @@ jobs:
         PORT: 3000
         IMAGE_TAG: 0.0.1
       run: |
-        docker build --build-arg PORT=$PORT --build-arg MONGODB_URL=$MONGO_URL -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f Dokcerfile .
+        docker build --build-arg PORT=$PORT --build-arg MONGODB_URL=$MONGO_URL -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f ./app/service1/Dokcerfile .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
