@@ -3,7 +3,7 @@ services:
   webserver:
     restart: unless-stopped
     privileged: true
-    image: 851725552187.dkr.ecr.eu-west-1.amazonaws.com/service1_arik:0.0.8
+    image: 851725552187.dkr.ecr.eu-west-1.amazonaws.com/service1_arik:0.0.9
     depends_on:
       - mongo_db
     ports:
