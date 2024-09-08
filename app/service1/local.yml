@@ -3,12 +3,12 @@ services:
   webserver:
     restart: unless-stopped
     privileged: true
-    image: arik-service1/service2
+    image: 851725552187.dkr.ecr.eu-west-1.amazonaws.com/service1_arik:0.0.10
     depends_on:
-      - mongodb
+      - mongo_db
     ports:
         - "3000:3000"
-  mongodb:
-    image: 851725552187.dkr.ecr.eu-west-1.amazonaws.com/service1_arik:0.0.10
+  mongo_db:
+    image: public.ecr.aws/docker/library/mongo:8.0.0-rc20
     ports:
         - "27017:27017"
