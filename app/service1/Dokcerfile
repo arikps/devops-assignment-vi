@@ -6,6 +6,7 @@ ENV MONGODB_URL=${MONGODB_URL}
 
 RUN mkdir -p /app/service1/
 WORKDIR /app/service1/
+RUN pwd && ls -lrt && sleep 10
 COPY package.json /
 RUN npm install
 COPY . .
