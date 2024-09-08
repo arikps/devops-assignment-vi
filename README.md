@@ -10,4 +10,10 @@ You are a DevOps engineer in a project of building an online orders system. Your
 Below is the information given by the development team.
 
 ### Installation Guide
-1. To
+EKS Cluster
+1. To Install the EKS clsuter go to Infra --> Terraform
+2. Run "terrafrom init"
+3. Run "terrafrom apply"
+
+
+
